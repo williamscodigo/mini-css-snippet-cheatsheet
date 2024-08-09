@@ -94,7 +94,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-
 }
 
 .code-card {
@@ -102,20 +101,29 @@ body {
     color: var(--white);
     background: linear-gradient(var(--secondary-color), var(--primary-color), var(--secondary-color));
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.code-card:hover {
+code:hover {
     cursor: grab;
 }
 
-.code-card:active {
+code:active {
     cursor: grabbing;
+    user-select: all;
 }
 
 
-.code-card, pre, code {
+code::selection {
+    background-color: turquoise;
+    color: black;
+}
+
+.code-card {
     height: 100%;
-}
+} 
 
 
 
