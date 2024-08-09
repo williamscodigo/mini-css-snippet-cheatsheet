@@ -60,7 +60,6 @@ body {
 #main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
     row-gap: 48px;
     column-gap: 16px;
 }

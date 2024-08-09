@@ -89,6 +89,7 @@
             </header>
             <p>Use transition and box shadows to glow on hover</p>
             <div class="code-card">
+                <!--fixed pre layout issue; line 102 and 103 was on same line making grid/flex layout not respect equal sizes for all child-->
             <pre>
                 <code>
 .div-card .card-header {
@@ -98,8 +99,9 @@
 
 .div-card:hover,
 .div-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 
-    0 0 15px rgba(231, 102, 236, 1);
+    box-shadow: inset 0px 0px 8px 
+    rgba(232, 102, 236, 1), 0 0 15px 
+    rgba(231, 102, 236, 1);
 }
                 </code>
             </pre>
